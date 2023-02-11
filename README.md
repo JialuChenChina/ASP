@@ -1,2 +1,3 @@
 # ASP
-The code of AAAI-2023 paper ‘Attribute and Structure preserving Graph Contrastive Learning’
+An official PyTorch implementation of "Attribute and Structure preserving Graph Contrastive Learning" (AAAI 2023))
+
