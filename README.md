@@ -1,5 +1,5 @@
 # ASP
-An official PyTorch implementation of "Attribute and Structure preserving Graph Contrastive Learning" (AAAI 2023))
+The code of "Attribute and Structure preserving Graph Contrastive Learning" (AAAI 2023))
 
 ## Overview
 + `./model.py`: The code of model ASP.
