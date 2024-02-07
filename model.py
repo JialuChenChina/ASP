@@ -9,7 +9,19 @@ from torch_geometric.utils import add_remaining_self_loops, remove_self_loops
 import numpy as np
 from torch_geometric.utils import dropout_adj
 
+class LogReg(nn.Module):
+    def __init__(self, in_channels, out_channels):
+        super(LogReg, self).__init__()
+        self.fc = nn.Linear(in_channels, out_channels)
+        self.reset_parameters()
 
+    def reset_parameters(self):
+        self.fc.reset_parameters()
+      
+    def forward(self, x):
+        x = self.fc(x)
+        return F.log_softmax(x, dim=1)
+      
 def gcn_norm(edge_index, edge_weight=None, num_nodes=None, improved=False,
              add_self_loops=True, dtype=None):
 
