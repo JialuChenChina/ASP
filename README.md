@@ -1,5 +1,5 @@
 # ASP
-The code of "Attribute and Structure preserving Graph Contrastive Learning" (AAAI 2023))
+The code of "Attribute and Structure preserving Graph Contrastive Learning" (AAAI 2023 oral)
 
 ## Overview
 + `./model.py`: The code of model ASP.
